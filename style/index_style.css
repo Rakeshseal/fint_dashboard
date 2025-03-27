@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f8f9fa;
+}
+
+.btn {
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 16px 40px 16px 40px;
+}
+
+.primary_btn {
+  background-color: #A50A1D;
+  color: white;
+}
+
+.primary_btn:hover {
+  background-color: #910213;
+  color: white;
+}
+
+.secondery_btn {
+  background-color: white;
+  border: #A50A1D solid 2px;
+  color: #A50A1D;
+}
+
+.secondery_btn:hover {
+  background-color: white;
+  border: #A50A1D solid 2px;
+  color: #A50A1D;
+}
+
+.sidebar {
+  background-color: #ffffff;
+  padding: 20px;
+  height: 100vh;
+  border-right: 1px solid #dee2e6;
+}
+.sidebar .menu_item_wrapper {
+  align-items: center;
+  gap: 15px;
+}
+.sidebar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.sidebar .nav-link {
+  color: #333;
+  padding: 10px 0;
+}
+.sidebar .nav-link.active {
+  font-weight: bold;
+}
+
+.main-content {
+  padding: 20px;
+}
+.main-content .header {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+.main-content .header .header_icon_wrapper {
+  gap: 20px;
+  align-items: center;
+}
+.main-content .header .header_icon_wrapper .header_icon {
+  width: 39px;
+  height: 39px;
+  border-radius: 100%;
+  background-color: #F2EDED;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: scale 2000ms ease;
+}
+.main-content .header .header_icon_wrapper .header_icon :hover {
+  scale: 1.2;
+}
+.main-content .header .header_icon_wrapper .header_user_icon {
+  width: 39px;
+  height: 39px;
+  border-radius: 100%;
+  background-color: #F2EDED;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: #A50A1D solid 1px;
+}
+.main-content .header .header_icon_wrapper .header_user_icon .header_user_image {
+  width: 35px;
+  width: 35px;
+  border-radius: 100%;
+  border: none;
+  outline: none;
+}
+.main-content .content {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.main-content .laft_form_wrapper {
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+.main-content .laft_form_wrapper .form-control {
+  padding-top: 9.5px;
+  padding-bottom: 9.5px;
+}
+.main-content .laft_form_wrapper .input_padding_top {
+  padding-top: 10px;
+}
+.main-content .laft_form_wrapper .input_btn_padding_top {
+  padding-top: 30px;
+}
+.main-content .laft_form_wrapper .form-label {
+  font-family: "Outfit", sans-serif;
+  font-size: 16px;
+  color: 0;
+}
+.main-content .profile-card {
+  text-align: center;
+  background-color: #A50A1D;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 28px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 12px;
+}
+.main-content .profile-card img {
+  border-radius: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 10px;
+  border: #ffffff solid 3px;
+}
+.main-content .profile-card .profile-actions {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.main-content .profile-card .profile-actions button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 26px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  overflow: hidden; /* Important for smooth animation */
+  max-height: 0; /* Important for smooth animation */
+  transition: max-height 0.3s ease-out; /* Smooth animation */
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown.open .dropdown-content {
+  max-height: 500px; /* Adjust max-height as needed */
+  transition: max-height 0.3s ease-in;
+}
+
+.dropdown-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .sidebar {
+    height: auto;
+    border-right: none;
+    border-bottom: 1px solid #dee2e6;
+  }
+}/*# sourceMappingURL=index_style.css.map */
